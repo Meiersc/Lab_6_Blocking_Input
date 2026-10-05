@@ -49,6 +49,6 @@ public class FuelCosts {
         System.out.printf("Cost to drive 100 miles: $%.2f%n", costPer100Miles);
         System.out.printf("Distance the car can go with a full tank: %.2f miles%n", maxDistance);
 
-        scanner.close();
+
     }
 }
