@@ -6,15 +6,16 @@ public class CtoFConverter {
         int math= (int) 1.8;
         Scanner in = new Scanner(System.in);
         boolean done = false; // a control variable
+        double Fctemp= 0;
         double Ftemp = 0;
-
         do {
             System.out.println("What's the temperature? ");
             if (in.hasNextInt()) {
                 temp = in.nextInt();
                 in.nextLine();// clear the buffer
                 done = true;
-                int i = +32;
+                Ftemp= temp*1.8;
+                Fctemp= Ftemp+32;
 
             } else {
                 String thrash = in.nextLine(); //read the bad input
@@ -22,7 +23,7 @@ public class CtoFConverter {
             }
         } while (!done); // we loop until done is true
         System.out.println("The temperature in c is " + temp);
-        System.out.println("The temperature in F is "+Ftemp);
+        System.out.println("The temperature in F is "+Fctemp);
     }
 }
 
